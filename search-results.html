@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Available Vehicles | Non Challan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Non Challan</div>
+    <ul class="nav-links center-nav">
+      <li>Home</li>
+      <li>Rent Bikes</li>
+      <li>How It Works</li>
+    </ul>
+    <div class="login-btn">Login</div>
+  </nav>
+
+  <!-- RESULTS PAGE -->
+  <section class="results-page">
+
+    <!-- FILTERS -->
+    <aside class="filters">
+      <h3>Filters</h3>
+
+      <div class="filter-group">
+        <label>Vehicle Type</label>
+        <select>
+          <option>All</option>
+          <option>Bikes</option>
+          <option>Scooters</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Price Range</label>
+        <input type="range" min="200" max="1000" />
+      </div>
+    </aside>
+
+    <!-- RESULTS -->
+    <main class="results">
+      <div class="results-header">
+  <span class="results-count">Displaying 3 Results</span>
+</div>
+
+
+      <div class="vehicle-grid">
+
+        <!-- CARD 1 -->
+        <div class="vehicle-card">
+          <img src="Slider images/roamers-hub-kandoli.jpg" />
+          <div class="vehicle-info">
+            <h3>Roamers Hub – Bike</h3>
+            <p>₹400 / day</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="vehicle-card">
+          <img src="Slider images/rental-roadies.jpg" />
+          <div class="vehicle-info">
+            <h3>Rental Roadies – Scooty</h3>
+            <p>₹500 / day</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="vehicle-card">
+          <img src="Slider images/rent-and-ride.jpg" />
+          <div class="vehicle-info">
+            <h3>Rent & Ride – Bike</h3>
+            <p>₹350 / day</p>
+            <button>Book Now</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  </section>
+
+</body>
+</html>

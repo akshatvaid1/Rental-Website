@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <meta charset="UTF-8">
+  <title>Non Challan | Scooty & Bike Rentals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement-bar">
+  <div class="marquee">
+    <span class="glitch" data-text="This is a Beta Tester Website. Stay Tuned for More!">
+      This is a Beta Tester Website. Stay Tuned for More!
+    </span>
+  </div>
+</div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+  <div class="logo">Non Challan</div>
+
+  <ul class="nav-links center-nav">
+    <li>Home</li>
+    <li>Rent Bikes</li>
+    <li>How It Works</li>
+  </ul>
+
+  <div class="login-btn">Login</div>
+</nav>
+
+
+  <!-- HERO SLIDER -->
+<section class="hero">
+  <div class="hero-slider">
+    <div class="slide active"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+  </div>
+
+  <!-- CENTERED SEARCH BOX -->
+  <div class="hero-content">
+    <div class="search-wrapper dark">
+      <p class="search-heading">Search your next ride</p>
+
+      <div class="search-bar dark-bar">
+       <div class="search-bar-single">
+
+  <div class="search-field">
+    <i data-lucide="map-pin"></i>
+    <select id="location">
+      <option value="">Location</option>
+      <option>Kandoli</option>
+      <option>Bidholi</option>
+      <option>Pondha</option>
+    </select>
+  </div>
+
+  <div class="search-divider"></div>
+
+  <div class="search-field date-field">
+  <i data-lucide="calendar"></i>
+  <input type="text" id="startDate" placeholder="Start Date" readonly />
+</div>
+
+
+  <div class="search-divider"></div>
+
+  <div class="search-field">
+    <i data-lucide="clock"></i>
+    <select id="startTime">
+      <option value="" disabled selected>Start Time</option>
+    </select>
+  </div>
+
+  <div class="search-divider"></div>
+
+  <div class="search-field">
+    <i data-lucide="clock"></i>
+    <select id="endTime">
+       <option value="" disabled selected>End Time</option>
+    </select>
+  </div>
+
+  <div class="search-divider"></div>
+
+  <div class="search-field date-field">
+  <i data-lucide="calendar"></i>
+  <input type="text" id="endDate" placeholder="End Date" readonly />
+</div>
+
+
+  <button id="searchBtn" class="search-btn-single" disabled>
+    <i data-lucide="search"></i>
+  </button>
+
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+  <!-- Rental Shops Section -->
+  <section class="shops">
+    <h2>Available Rental Shops</h2>
+
+    <div class="shop-list">
+
+      <div class="shop-card">
+        <img src="Logos of shops/roamers-hub-logo.jpg">
+        <h3>Roamers Hub</h3>
+        <p>Vehicles: Scooty & Bikes</p>
+        <p>Location: Bidholi & Kandoli</p>
+        <!-- <p>Starting from ₹400/day</p> -->
+        <!-- <button>View Vehicles</button> -->
+      </div>
+
+    <div class="shop-card">
+        <img src="Logos of shops/singh-rent-hub-temp-logo.avif">
+        <h3>Singh Rent Hub</h3>
+        <p>Vehicles: Scooty & Bikes</p>
+        <p>Location: Kandoli</p>
+        <!--<p>Starting from ₹500/day</p>
+        <!-- <button>View Vehicles</button> -->
+      </div>
+
+      <div class="shop-card">
+        <img src="Logos of shops/rental-roadies-logo.jpg.jpg">
+        <h3>Rental Roadies</h3>
+        <p>Vehicles: Scooty & Bikes</p>
+        <p>Location: Bidholi</p>
+        <!--<p>Starting from ₹500/day</p>
+        <!-- <button>View Vehicles</button> -->
+      </div>
+
+      <div class="shop-card">
+        <img src="Logos of shops/rent-and-ride-logo.jpg">
+        <h3>Rent and Ride</h3>
+        <p>Vehicles: Scooty and Bikes</p>
+        <p>Location: Kandoli</p>
+        <!-- <p>Starting from ₹350/day</p> -->
+        <!-- <button>View Vehicles</button> -->
+      </div>
+
+    </div>
+  </section>
+
+  <section class="why-choose">
+  <h2 class="why-title">Why Choose <span>Non Challan</span></h2>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">📍</div>
+      <h3>Local Rentals Nearby</h3>
+      <p>
+        Find bikes and scooties available close to your hostel, college,
+        or neighborhood.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🎓</div>
+      <h3>Student-Friendly Pricing</h3>
+      <p>
+        Affordable hourly and daily rental plans designed for students
+        and short trips.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🏪</div>
+      <h3>Verified Local Shops</h3>
+      <p>
+        We partner with trusted nearby rental shops you already know
+        and rely on.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🛵</div>
+      <h3>Perfect for Short Trips</h3>
+      <p>
+        Ideal for malls, cafés, college commutes, Mussoorie rides,
+        and quick getaways.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🌍</div>
+      <h3>Tier-2 & Campus Focused</h3>
+      <p>
+        Built for cities and college areas where big rental apps
+        don’t operate well.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">💬</div>
+      <h3>Instant WhatsApp Booking</h3>
+      <p>
+        No complicated apps. Book instantly and talk directly with us
+        when needed.
+      </p>
+    </div>
+</section>
+
+
+<!-- CONFIRMATION MODAL -->
+<div class="confirm-overlay" id="confirmOverlay">
+  <div class="confirm-modal">
+    <h3>Confirm your booking</h3>
+
+    <div class="confirm-details" id="confirmDetails"></div>
+
+    <div class="confirm-actions">
+      <button class="btn-cancel" id="cancelConfirm">Cancel</button>
+      <button class="btn-confirm" id="confirmWhatsapp">
+        Continue to WhatsApp
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Footer -->
+   <footer class="site-footer">
+  <div class="footer-top">
+
+    <!-- BRAND -->
+    <div class="footer-col brand">
+      <h2>Non Challan</h2>
+      <p>Reliable scooty & bike rentals with a smooth booking experience.</p>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul>
+    </div>
+
+    <!-- SUPPORT -->
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="mailto:contact@nonchallan.com">contact@nonchallan.com</a></li>
+        <li><a href="tel:+919229744535">+91 92297 44535</a></li>
+        <li><a href="#">Chat with us</a></li>
+      </ul>
+    </div>
+
+    <!-- POLICIES -->
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>
+        Kandoli, Dehradun<br>
+        Uttarakhand, India
+      </p>
+      <a class="footer-cta" href="#">Get in Touch</a>
+    </div>
+
+  </div>
+
+  <!-- CITIES -->
+  <div class="footer-cities">
+    <h4>Available Cities</h4>
+    <div class="cities-grid">
+      <span>Dehradun</span>
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    © 2026 Non Challan. All rights reserved.
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="script.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+
+
+
+<!-- Mobile WhatsApp CTA -->
+<a class="mobile-whatsapp"
+   href="https://wa.me/919229744535"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+  Chat on WhatsApp
+</a>
+
+</body>
+</html>
+
+
